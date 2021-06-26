@@ -1,4 +1,6 @@
-# Injecting Knowledge Base Information into End-to-End Joint Entity and Relation Extraction and Coreference Resolution
+# Injecting Knowledge Base Information into End-to-End Joint Entity and Relation Extraction and Coreference Resolution 
+
+##(this repository is a work in progress!)
 
 ## Introduction
 
@@ -17,7 +19,7 @@ To download the datasets, embeddings and dictionaries execute the following scri
 
 ```./download_data.sh```
 
-After running the script, the resulting directory structure (only directories shown) should be as follows:
+After running the script, the resulting directory structure should be as follows:
 ```
 ├── experiments
 ├── data
@@ -42,8 +44,8 @@ pip install -r requirements.txt
 ``` 
 
 
-## Training command
-The training python script is located in ```src/train.py```, it takes two arguments:
+## Training
+The training script is located in ```src/train.py```, it takes two arguments:
  
 1- ```--config_file```: the configuration file to run one of the experiments in ```experiments``` directory
  (the names of experiment config files are self explanatory).  
@@ -55,9 +57,9 @@ Example:
 
 ```python src/train.py --config_file experiments/attention_dwie_kb_both.json --path results``` 
 
-## Evaluate command
+## Evaluation
 After the training is finished, the prediction files are saved as ```test.json``` inside the results
-directory. In order to obtain the F1 scores:  
+directory. In order to obtain the F1 scores execute:  
 
 ```python src/evaluation_script.py --pred [path to prediction file] --gold data/datasets/dwie/data/annos_with_content/ --gold-filter test```
 
@@ -65,7 +67,7 @@ Example:
 
 ```python src/evaluation_script.py --pred results/attention_dwie_kb_both/test.json --gold data/datasets/dwie/data/annos_with_content/ --gold-filter test```
 
-The ```test.json``` can be also obtained by explicitly loading and evaluating the model saved by ```src/train.py``` script: 
+The ```test.json``` can be also obtained by explicitly loading and evaluating the model in the results directory: 
 
 ```python -u src/run_model.py --path [path to the results directory with serialized model savemodel.pth]```
 
