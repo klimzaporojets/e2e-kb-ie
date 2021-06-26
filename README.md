@@ -17,7 +17,7 @@ To download the datasets, embeddings and dictionaries execute the following scri
 
 ```./download_data.sh```
 
-After running the script, resulting directory structure (only directories shown) should be as follows:
+After running the script, the resulting directory structure (only directories shown) should be as follows:
 ```
 ├── experiments
 ├── data
