@@ -1,0 +1,14 @@
+.idea/
+__pycache__/
+Code\ versies/
+data/**/
+glove.6B/
+venv/
+en_core_web_sm-2.3.1.tar.gz
+enwiki_200.txt.gz
+filt_enwiki_200.txt.gz
+events.out.tfevents.**
+/filt_enwiki_200_2.txt.gz
+test.py
+synchronize.sh
+/results/
