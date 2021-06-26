@@ -36,7 +36,7 @@ After running the script, the resulting directory structure should be as follows
 
 ## Creating the Environment
 We recommend creating a separate environment to run the code and 
-then install the packages in requirements.txt: 
+then installing the packages in requirements.txt: 
 ```
 conda create -n e2e-kb-ie python=3.9
 conda activate e2e-kb-ie
