@@ -1,6 +1,6 @@
 # Injecting Knowledge Base Information into End-to-End Joint Entity and Relation Extraction and Coreference Resolution 
 
-##(this repository is a work in progress!)
+## (this repository is a work in progress!)
 
 ## Introduction
 
