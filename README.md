@@ -1,7 +1,5 @@
 # Injecting Knowledge Base Information into End-to-End Joint Entity and Relation Extraction and Coreference Resolution 
 
-## (this repository is a work in progress!)
-
 ## Introduction
 
 This repository contains the code to reproduce the results from the following paper:
