@@ -12,6 +12,16 @@ This repository contains the code to reproduce the results from the following pa
 }
 ```
 
+## Creating the Environment
+We recommend creating a separate environment to run the code and 
+then installing the packages in requirements.txt: 
+```
+conda create -n e2e-kb-ie python=3.9
+conda activate e2e-kb-ie
+pip install -r requirements.txt
+``` 
+
+
 ## Downloading the Data
 To download the datasets, embeddings and dictionaries execute the following script: 
 
@@ -31,16 +41,6 @@ After running the script, the resulting directory structure should be as follows
 ├── src
 
 ```
-
-## Creating the Environment
-We recommend creating a separate environment to run the code and 
-then installing the packages in requirements.txt: 
-```
-conda create -n e2e-kb-ie python=3.9
-conda activate e2e-kb-ie
-pip install -r requirements.txt
-``` 
-
 
 ## Training
 The training script is located in ```src/train.py```, it takes two arguments:
