@@ -6,7 +6,7 @@ unzip data.zip
 rm data.zip
 # gets the dwie dataset from git@github.com:klimzaporojets/DWIE.git
 mkdir data/datasets/dwie
-git clone git@github.com:klimzaporojets/DWIE.git data/datasets/dwie
+git clone https://github.com/klimzaporojets/DWIE.git data/datasets/dwie
 cd data/datasets/dwie
 python scripts/dwie_download.py --tokenize True
 cd ../../../
