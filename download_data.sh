@@ -8,5 +8,5 @@ rm data.zip
 mkdir data/datasets/dwie
 git clone https://github.com/klimzaporojets/DWIE.git data/datasets/dwie
 cd data/datasets/dwie
-python scripts/dwie_download.py --tokenize True
+python src/dwie_download.py --tokenize True
 cd ../../../

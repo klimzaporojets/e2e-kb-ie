@@ -10,7 +10,7 @@ class ModuleCorefScorer(nn.Module):
         self.coref_prop = config['coref_prop']
         self.update_coref_scores = config['update_coref_scores']
 
-        print("ModuleCorefProp(cp={})".format(self.coref_prop))
+        print("ModuleCorefScorer(cp={})".format(self.coref_prop))
 
         self.coref_pruner = coref_pruner
         self.coref = OptFFpairs(dim_span, 1, config, span_pair_generator)
